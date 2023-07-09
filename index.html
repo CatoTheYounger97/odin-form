@@ -19,13 +19,31 @@
             </header>
 
             <form>
-                ul>li*
-                <div>
-                    <legend>Let's do this!</legend>
-                </div>
-                    
+                <ul>
+                    <li>Let's do this!</li>
+                    <li>
+                        <label for="first_name">FIRST NAME</label>
+                        <input type="text" id="first_name" name="first_name">
+                        <label for="last_name">LAST NAME</label>
+                        <input type="text" id="last_name" name="last_name">
+                    </li>
+                    <li>
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email">
 
-                    
+                        <label for="phone_num">PHONE NUMBER</label>
+                        <input type="tel" name="phone_num" id="phone_num">
+                    </li>
+                    <li>
+                        <label for="password_initial">PASSWORD</label>
+                        <input type="password" id="password_initial" name="password_initial">
+
+                        <label for="password_confirm">CONFIRM PASSWORD</label>
+                        <input type="password" id="password_confirm" name="password_confirm">
+                    </li>
+                </ul>
+
+                <button type="submit">Create Account</button>
 
             </form>
 
