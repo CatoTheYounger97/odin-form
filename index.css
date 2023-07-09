@@ -3,5 +3,17 @@
 }
 
 body {
+
+}
+
+.PageContent {
     height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.ImageSidebar img{
+    width: 33vw;
+    position: relative;
 }
