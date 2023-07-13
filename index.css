@@ -1,10 +1,15 @@
 * {
     box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 @font-face {
     font-family: sidebar-logo-font;
     src: url(fonts/Norse-Bold.otf);
+}
+
+body {
+    margin: auto;
 }
 
 
@@ -13,20 +18,28 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background-color: whitesmoke;
 }
 
+
 .ImageSidebar {
-    width: 25%;
+    height: 100vh;
+    width: 25vw;
+    min-width: 400px;
     position: relative;
 }
 
-.ImageSidebar #mainSidebarImage {
+.ImageSidebar > img {
+    height: 100%;
     width: 100%;
+    object-fit: cover;
 }
 
 .ImageSidebar .SidebarLogo {
     padding: 10px;
     height: 20%;
+    min-height: 4rem;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.6);
 
@@ -37,13 +50,14 @@
     position: absolute;
     top: 20%;
     
-    font-size: 3rem;
+    font-size: 4rem;
     color: white;
     font-family: sidebar-logo-font, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .ImageSidebar #sideBarLogoImage {
     height: 100%;
+    object-fit: contain;
 }
 
 .ImageSidebar #sidebarCredit {
@@ -52,4 +66,47 @@
     text-align: center;
     position: absolute;
     bottom: 3%;
+}
+
+
+
+.MainContent {
+    background-color: whitesmoke;
+}
+
+.MainContent form {
+    padding-left: 25px;
+}
+
+.MainContent form  ul{
+    margin: 0;
+    padding: 0;
+    display:inline-block;
+    list-style: none;
+    padding-right: 50px;
+}
+
+.MainContent form  label {
+    display: block;
+}
+
+.MainContent form  input {
+    margin-bottom: 20px;
+}
+
+.MainContent form  > div{
+    background-color: white;
+}
+
+
+
+header {
+    font-weight: bold;
+}
+footer {
+    font-size: 0.75rem;
+}
+
+a {
+    text-decoration: none;
 }
