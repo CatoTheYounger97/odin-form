@@ -74,7 +74,9 @@ body {
     background-color: whitesmoke;
 }
 
-.MainContent form {
+.MainContent form > div,
+.MainContent header,
+.MainContent footer {
     padding-left: 25px;
 }
 
@@ -94,7 +96,7 @@ body {
     margin-bottom: 20px;
 }
 
-.MainContent form  > div{
+.MainContent form #formFields{
     background-color: white;
 }
 
