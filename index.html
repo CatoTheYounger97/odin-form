@@ -36,35 +36,35 @@
 
             <form>
                 <div id="formFields">
-                    <h1>Let's do this!</h1>
+                    <h3>Let's do this!</h3>
 
                     <ul>
                         <li>
                             <label for="first_name">FIRST NAME</label>
-                            <input type="text" id="first_name" name="first_name">
+                            <input type="text" id="first_name" name="first_name" required>
                         </li>
                         <li>
                             <label for="email">EMAIL</label>
-                            <input type="email" name="email" id="email">
+                            <input type="email" name="email" id="email" required>
                         </li>
                         <li>
                             <label for="password_initial">PASSWORD</label>
-                            <input type="password" id="password_initial" name="password_initial">
+                            <input type="password" id="password_initial" name="password_initial" required class="error">
                         </li>
                     </ul>
 
                     <ul>
                         <li>
                             <label for="last_name">LAST NAME</label>
-                            <input type="text" id="last_name" name="last_name">
+                            <input type="text" id="last_name" name="last_name" required>
                         </li>
                         <li>
                             <label for="phone_num">PHONE NUMBER</label>
-                            <input type="tel" name="phone_num" id="phone_num">
+                            <input type="tel" name="phone_num" id="phone_num" required>
                         </li>
                         <li>
                             <label for="password_confirm">CONFIRM PASSWORD</label>
-                            <input type="password" id="password_confirm" name="password_confirm">
+                            <input type="password" id="password_confirm" name="password_confirm" required class="error">
                         </li>
                     </ul>
 
