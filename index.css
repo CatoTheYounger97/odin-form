@@ -114,14 +114,19 @@ body {
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 }
 
-.MainContent form input:valid {
-    border: 1px solid #596D48;
-
-
-}
-
 .MainContent form input.error {
     border: 1px solid red;
+}
+
+.MainContent form li {
+    position: relative;
+}
+
+.MainContent form #passwordError {
+    position: absolute;
+    font-size: 0.5rem;
+    bottom: 10px;
+    color: red;
 }
 
 .MainContent form #formFields{
@@ -143,11 +148,6 @@ body {
 
     font-weight: bold;
 }
-
-.MainContent form button:hover {
-
-}
-
 
 header {
     font-weight: bold;

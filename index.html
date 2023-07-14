@@ -40,27 +40,28 @@
 
                     <ul>
                         <li>
-                            <label for="first_name">FIRST NAME*</label>
-                            <input type="text" id="first_name" name="first_name" required>
+                            <label for="first_name">FIRST NAME</label>
+                            <input type="text" id="first_name" name="first_name" >
                         </li>
                         <li>
-                            <label for="email">EMAIL*</label>
-                            <input type="email" name="email" id="email" required>
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" id="email" >
                         </li>
                         <li>
                             <label for="password_initial">PASSWORD*</label>
                             <input type="password" id="password_initial" name="password_initial" required class="error">
+                            <div class="error" id="passwordError" aria-live="polite">* Passwords do not match</div>
                         </li>
                     </ul>
 
                     <ul>
                         <li>
-                            <label for="last_name">LAST NAME*</label>
-                            <input type="text" id="last_name" name="last_name" required>
+                            <label for="last_name">LAST NAME</label>
+                            <input type="text" id="last_name" name="last_name" >
                         </li>
                         <li>
-                            <label for="phone_num">PHONE NUMBER*</label>
-                            <input type="tel" name="phone_num" id="phone_num" required>
+                            <label for="phone_num">PHONE NUMBER</label>
+                            <input type="tel" name="phone_num" id="phone_num" >
                         </li>
                         <li>
                             <label for="password_confirm">CONFIRM PASSWORD*</label>
@@ -70,7 +71,7 @@
 
                 </div>
                 <div id="formButton">
-                    <button type="submit">Create Account</button>
+                    <button type="submit" id="formSubmit">Create Account</button>
                 </div>
 
             </form>
